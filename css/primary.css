@@ -1,0 +1,300 @@
+ /* 当浏览器的可视区域小于980px */
+@media screen and (max-width: 980px) {
+     #wrap {width: 90%; margin:0 auto;}
+     #content {width: 60%;padding: 5%;}
+     #sidebar {width: 30%;}
+     #footer {padding: 8% 5%;margin-bottom: 10px;}
+}
+ /* 当浏览器的可视区域小于650px */
+@media screen and (max-width: 650px) {
+     #header {height: auto;}
+     #searchform {position: absolute;top: 5px;right: 0;}
+     #content {width: auto; float: none; margin: 20px 0;}
+     #sidebar {width: 100%; float: none; margin: 0;}
+}
+html body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url();
+}
+.navigationbar{
+	height: 90px;
+	width: 100%;
+	box-shadow:0 0 5px rgb(214,216,225);
+	display: flex;
+	align-items: center;
+	position: fixed;
+	background-color: #ffffff;
+	z-index: 1;
+}
+.name{
+	margin-left: 360px;
+	font-size: 25px;
+	color: #FF00FF;
+	font-weight: 600;
+}
+ul li{
+	list-style-type: none;
+	margin-left: 40px;
+}
+ul{
+	margin-left: 300px;
+}
+li{
+	display: inline;
+	float: left;
+}
+li a{
+	text-decoration: none;
+	color: rgb(140,145,168);
+	font-size: 14px;
+}
+li a:hover{
+	color: #FF00FF;
+}
+.banner {
+	height: 800px;
+	background: url("../img/banner1.jpg") no-repeat center;
+}
+.bannerbtns{
+	position: absolute;
+	top: 760px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 180px;
+	height: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+.bannerbtn{
+	width: 40px;
+	height: 10px;
+	border-radius: 10px;
+	background-color: black;
+	filter: opacity(0.6);
+}
+.bannerbtn:hover {
+	background-color: #FF00FF;
+}
+.aboutme {
+	height: 130px;
+	color: rgb(67,72,92);
+	font-size: 22px;
+	font-weight: 600;
+	text-align: center;
+	line-height: 130px;
+	border-bottom: 1px solid rgb(229,235,242);
+}
+.myself{
+	height: 760px;
+}
+
+.myself{
+	display: flex;
+
+}
+.myself-info{
+	margin-left: 380px;
+	margin-top: 100px;
+	width: 510px;
+}
+.line{
+	margin-top: 50px;
+	border-top: 1px solid  rgb(60,66,88);
+}
+.title{
+	color: rgb(60,66,88);
+	font-size: 14px;
+	font-weight: bolder;
+}
+.elseinfo{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.phone{
+	height: 50px;
+	width: 170px;
+	margin-top: 40px;
+	padding-top: 20px;
+}
+.content{
+	font-size: 14px;
+	margin-top: 10px;
+	color: rgb(140,145,168);
+}
+.myself-photo{
+	margin-left: 130px;
+	margin-top: 100px;
+	width: 450px;
+	height: 600px;
+	background: url(../img/photo.jpg) no-repeat center;
+	border-radius: 5px;
+}
+/* .myself-photo img {
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+} */
+.skill{
+	background-color: rgb(249,251,253);
+}
+.skills{
+	height: 430px;
+	background-color: rgb(249,251,253);
+}
+.skls{
+	width: 1110px;
+	height: 290px;
+	margin-left: 380px;
+	padding-top: 100px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.progresses{
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+}
+.progress{
+	width: 470px;
+	height: 10px;
+	background-color: #e9e5e2;
+	border-radius: 5px;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#e1ddd9), to(#e9e5e2)); 
+ 	background-image: -webkit-linear-gradient(top,#e1ddd9,#e9e5e2);
+    background-image: -moz-linear-gradient(top,#e1ddd9,#e9e5e2);
+    background-image: -ms-linear-gradient(top,#e1ddd9,#e9e5e2);
+    background-image: -o-linear-gradient(top,#e1ddd9,#e9e5e2);
+    background-image: linear-gradient(top,#e1ddd9,#e9e5e2);
+	-webkit-box-shadow: 0 1px 0 #bebbb9 inset, 0 1px 0 #fcfcfc;
+    box-shadow: 0 1px 0 #bebbb9 inset, 0 1px 0 #fcfcfc;
+}
+.percent{
+	margin-left: 10px;
+}
+/* 单独设置进度条样式 */
+.skill-one{
+	width: 284px;
+    -webkit-animation: skill-one 3s linear 1;
+	position: absolute;
+    /* background-color: #FF00FF; */
+	background-image: linear-gradient(to right, #FF00FF , yellow)
+}
+
+/* 给每个进度条设置动画*/
+@-webkit-keyframes skill-one {
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 0;
+	}
+}
+
+/* 工作经历*/
+.experience{
+	display: flex;
+	justify-content: flex-start;
+	width: 1100px;
+	margin-left: 380px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	
+}
+
+/* 设置滚动条的样式 */
+.experience::-webkit-scrollbar {
+	/* width: 20px; */
+	height: 5px;
+}
+	/* 滚动槽 */
+.experience::-webkit-scrollbar-track {
+	-webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
+	border-radius:10px;
+}
+	/* 滚动条滑块 */
+.experience::-webkit-scrollbar-thumb {
+	border-radius:20px;
+	background:rgb(255,66,255,0.6);
+	-webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+}
+.experience::-webkit-scrollbar-thumb:window-inactive {
+	background:#FF00FF;
+}
+
+.experience-content{
+	width: 395px;
+	height: 280px;
+	margin-top: 80px;
+}
+.reddot{
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: #FF00FF;
+}
+.dotline{
+	width: 390px;
+	height: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.little-line{
+	height: 1px;
+	width: 370px;
+	background-image: linear-gradient(to right,#FF00FF,yellow);
+}
+.content-width{
+	width: 320px;
+}
+
+/* 回顶部按钮 */
+.totop{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	box-shadow: 0px 0px 5px #FF00FF;
+	background-color: #FF00FF;
+	background-size: 20px 20px;
+}
+.totopimg{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	background: url(../img/totopwhite.png) no-repeat center;
+	background-size: 20px 20px;
+	animation: totopimg 2s linear infinite ;
+}
+@keyframes totopimg {
+	0%{
+		top: 50%;
+	}
+	50%{
+		top: 10px;
+	}
+	100%{
+		top: 50%;
+	}
+}
+.totop:hover{
+	background-color: #ffffff;
+	border:1px solid #FF00FF;
+}
+.totop:hover .totopimg{
+	background: url(../img/totoppurple.png) no-repeat center;
+	background-size: 20px 20px;
+}
+
