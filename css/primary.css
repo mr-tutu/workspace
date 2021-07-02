@@ -180,21 +180,21 @@ li a:hover{
 /* 单独设置进度条样式 */
 .skill-one{
 	width: 284px;
-    -webkit-animation: skill-one 3s linear 1;
+    /* -webkit-animation: skill-one 3s linear 1; */
 	position: absolute;
     /* background-color: #FF00FF; */
 	background-image: linear-gradient(to right, #FF00FF , yellow)
 }
 
 /* 给每个进度条设置动画*/
-@-webkit-keyframes skill-one {
+/* @-webkit-keyframes skill-one {
 	0%{
 		width: 0;
 	}
 	100%{
 		width: 0;
 	}
-}
+} */
 
 /* 工作经历*/
 .experience{
@@ -214,14 +214,14 @@ li a:hover{
 }
 	/* 滚动槽 */
 .experience::-webkit-scrollbar-track {
-	-webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
+	/* -webkit-box-shadow:inset006pxrgba(0,0,0,0.3); */
 	border-radius:10px;
 }
 	/* 滚动条滑块 */
 .experience::-webkit-scrollbar-thumb {
 	border-radius:20px;
 	background:rgb(255,66,255,0.6);
-	-webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+	/* -webkit-box-shadow:inset006pxrgba(0,0,0,0.5); */
 }
 .experience::-webkit-scrollbar-thumb:window-inactive {
 	background:#FF00FF;
