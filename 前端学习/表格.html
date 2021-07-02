@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 14px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            border: 1px solid #000;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table thead tr {
+            background-color: rgb(255, 226, 102);
+        }
+
+        td,
+        th {
+            width: 200px;
+            height: 35px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+
+        .td1 {
+            background-color: rgb(255, 251, 224);
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>电商直播商品预告清单</h1>
+    <hr style="border: 1px solid gray" />
+    <table>
+        <thead>
+            <tr>
+                <th>品牌</th>
+                <th>商品</th>
+                <th>直播福利机制</th>
+                <th>直播剧透价格（元）</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4" class="td1">生活类</td>
+            </tr>
+            <tr>
+                <td>xxxx</td>
+                <td>乳胶枕</td>
+                <td>拍下立减</td>
+                <td>899</td>
+            </tr>
+            <tr>
+                <td>xxxx</td>
+                <td>电热蚊香</td>
+                <td>第二件1元</td>
+                <td>19.9/2件</td>
+            </tr>
+            <tr>
+                <td rowspan="2">合并行</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="td1">生活类</td>
+            </tr>
+            <tr>
+                <td>xxxx</td>
+                <td>乳胶枕</td>
+                <td>拍下立减</td>
+                <td>899</td>
+            </tr>
+            <tr>
+                <td>xxxx</td>
+                <td>电热蚊香</td>
+                <td>第二件1元</td>
+                <td>19.9/2件</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
